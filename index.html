@@ -773,10 +773,10 @@
 
     <footer id="contact">
         <p>© 2024 PrimePix AI. All rights reserved.</p>
-        <p>Contact: hello@primepixai.com</p>
+        <p>Contact: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bbd3ded7d7d4fbcbc9d2d6decbd2c3dad295d8d4d6">[email&#160;protected]</a></p>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // ============================================
         // IMPORTANT: Add your Stripe publishable key here
         // Get it from: https://dashboard.stripe.com/apikeys
@@ -787,7 +787,7 @@
         // ADD YOUR BACKEND SERVER URL HERE (after deploying backend-example.js)
         // Example: 'https://your-app.railway.app' or 'https://your-app.onrender.com'
         // ============================================
-        const BACKEND_URL = ''; // Leave empty until backend is deployed
+        const BACKEND_URL = 'https://primepixai-backend-production.up.railway.app';
         
         // Initialize Stripe
         let stripe, cardElement;
@@ -1019,12 +1019,4 @@
                 
             } catch (error) {
                 console.error('Payment error:', error);
-                document.getElementById('card-errors').textContent = error.message || 'An error occurred. Please try again.';
-            }
-            
-            submitButton.disabled = false;
-            submitButton.textContent = 'Complete Purchase';
-        });
-    </script>
-</body>
-</html>
+                document.getElementById('card-errors').textContent 
