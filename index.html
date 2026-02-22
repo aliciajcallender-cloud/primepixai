@@ -197,6 +197,14 @@
             overflow: hidden;
         }
 
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+            z-index: 1;
+        }
+
         .product-image::after {
             content: '';
             position: absolute;
@@ -541,7 +549,7 @@
         }
 
         .btn:disabled {
-            background: var(--gray);
+            background: var(--gray);images/README.md
             cursor: not-allowed;
             opacity: 0.6;
         }
@@ -586,7 +594,9 @@
 
         <div class="product-grid">
             <div class="product-card">
-                <div class="product-image">📸</div>
+                <div class="product-image">
+                    <img src="images/business-example.png" alt="Professional Portrait Example">
+                </div>
                 <div class="product-content">
                     <h3>Professional Portrait Pack</h3>
                     <p>10 prompts with professionally generated images. Perfect for LinkedIn, corporate headshots, and business profiles.</p>
@@ -598,7 +608,9 @@
             </div>
 
             <div class="product-card">
-                <div class="product-image">✨</div>
+                <div class="product-image">
+                    <img src="images/social-media-example.png" alt="Social Media Example">
+                </div>
                 <div class="product-content">
                     <h3>Social Media Essentials</h3>
                     <p>20 prompts with images optimized for Instagram, TikTok, and Pinterest. Create scroll-stopping content that drives engagement.</p>
@@ -610,7 +622,9 @@
             </div>
 
             <div class="product-card">
-                <div class="product-image">🏢</div>
+                <div class="product-image">
+                    <img src="images/business-example.png" alt="Business Marketing Example">
+                </div>
                 <div class="product-content">
                     <h3>Business & Marketing</h3>
                     <p>10 corporate-ready prompts for presentations, LinkedIn content, advertisements, and professional brand imagery.</p>
@@ -622,7 +636,9 @@
             </div>
 
             <div class="product-card">
-                <div class="product-image">🌟</div>
+                <div class="product-image">
+                    <img src="images/influencer-example.png" alt="Influencer Example">
+                </div>
                 <div class="product-content">
                     <h3>Influencer Starter Kit</h3>
                     <p>20 essential prompts for personal branding, lifestyle content, and building a cohesive aesthetic across all platforms.</p>
@@ -634,7 +650,9 @@
             </div>
 
             <div class="product-card">
-                <div class="product-image">🎭</div>
+                <div class="product-image">
+                    <img src="images/alter-ego-example.png" alt="Alter Ego Example">
+                </div>
                 <div class="product-content">
                     <h3>Alter Ego Pack</h3>
                     <p>Explore different personas and creative transformations. Perfect for artists, performers, and creative professionals.</p>
@@ -646,7 +664,9 @@
             </div>
 
             <div class="product-card">
-                <div class="product-image">🕊️</div>
+                <div class="product-image">
+                    <img src="images/memorial-example.png" alt="Memorial Portrait Example">
+                </div>
                 <div class="product-content">
                     <h3>Homegoing Pack</h3>
                     <p>10 prompts with images for memorial services and celebrations of life. Dignified, respectful, and beautifully crafted.</p>
